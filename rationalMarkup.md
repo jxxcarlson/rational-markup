@@ -18,7 +18,13 @@ In addition:
 
 4. Amenities such as automatically generated section numbers, tables of contents, cross-references, etc. are carried out by manipulation of the AST.  
 
-5. The parser is injective.  
+5. The parser is injective. 
+
+The project will consist of
+
+1. A compiler
+
+2. An IDE 
 
 ## Syntax
 
