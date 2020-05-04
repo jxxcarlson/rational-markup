@@ -36,7 +36,7 @@ Rational Markup has both block and inline elements.
 
 In the discussion below, it is assumed for simplicity that leading white space is not significant.  An alternative is to make indentation significant, where indentation by a multiple of a fixed number of spaces indicates the *level* of a block, as in Markdown.  If a block of of level *n* is followed by blocks of level *n + 1*, then those blocks are children in the AST of the level *n* block.
 
-Decision to make: is leading space significant, as it is in Markdown, Haskell, and Python.
+Decision to make: is leading space significant, as it is in Markdown, Haskell, and Python?
 
 Blocks are either *plain* or *marked*.  Marked blocks begin with the leading character |.  Some examples:
 
@@ -92,7 +92,7 @@ This is
 https://cdn-images-1.medium.com/max/1200/1*5wwVRWaTe7t_w0LhmLQAzQ.jpeg
 ```
 
-A marked block begin with the character `|` in leading position, followed immediately by the *block name*, followed by zero or more arguments separated by spaces.  Thus, we could have
+A marked block begins with the character `|` in leading position, followed immediately by the *block name*, followed by zero or more arguments separated by spaces.  Thus, we could have
 
 ```
 |q (Abraham Lincoln)
@@ -110,7 +110,9 @@ years ago ...
 ```
 
 Named arguments have the advantage that the are delimited by commas,
-parentheses are unnecessary. In addition, one can extend the language without breaking changes if one uses named arguments.
+parentheses are unnecessary. In addition, one can extend the language without breaking changes if one uses named arguments. 
+
+
 
 The blocks in the example above are *ordinary*, meaning that they 
 are terminated by one or more blank lines. Blocks can also be terminated
@@ -139,7 +141,7 @@ Rational markup has a small number of frequently used inline elements with a spe
 
 4. `~~strikethough~~`
 
-5. `$a^2 + b^2 = c^2$` — or maybe something like `($a^2 + b^2 = c^2$)` so as to eliminate begin-end ambiguities and to allow authors to say "this costs $10.
+5. `$a^2 + b^2 = c^2$` — or maybe something like `($a^2 + b^2 = c^2$)` so as to eliminate begin-end ambiguities and to allow authors to say "this costs $10."
 
 The general syntax (ATM) is as in the examples below. 
 
@@ -148,7 +150,7 @@ This is a |red warning|, and this is |font-size 48 Really Important|
 ```
 
 This approach means that | is a reserved character and cannot be used in leading position, so those issues must be dealt with.  Note that the 
-text `A | B` enclosed in backticks is OK.  The syntax for inline elements is much like that of blocks:
+text `A | B` enclosed in backticks is OK, wherease "A | B" is not.  The syntax for inline elements is much like that of blocks:
 
 - The leading character `|`
 
