@@ -22,9 +22,11 @@ In addition:
 
 The project will consist of
 
-1. A compiler
+1. A language specification
 
-2. An IDE 
+2. A compiler
+
+3. An IDE 
 
 ## Syntax
 
