@@ -28,6 +28,8 @@ The project will consist of
 
 3. An IDE 
 
+((See [these experiments](https://github.com/jxxcarlson/markup-experiments) for sketches of ideas tried/accepted/rejected.))
+
 ## Syntax
 
 Rational Markup has both block and inline elements.
